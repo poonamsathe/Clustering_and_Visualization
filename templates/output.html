@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Mapreduce result </title>
+</head>
+
+<body>
+        <h1> Success </h1>
+	<form action = "/total_lines" method="post" enctype = "multipart/form-data">
+		<input type = "submit" value="Lines" />
+        </form>
+
+	<form action = "/visualization" method="post" enctype = "multipart/form-data">
+                <input type = "submit" value="View" />
+        </form>
+
+
+{% for r in result %}
+<h3>{{r}} </h3><br/>
+{% endfor %}
+</body>
+</html>
+
+
